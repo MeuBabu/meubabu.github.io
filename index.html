@@ -11,10 +11,17 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Meu Babu-Web.json", {onProgress: UnityProgress});
     </script>
+    <style>
+        .Container
+        {
+            width: 80vw; 
+            height: 80vw;
+        }
+    </style>
   </head>
   <body>
     <div class="webgl-content">
-      <div id="unityContainer" style="width: 900px; height: 1600px"></div>
+      <div id="unityContainer" class="Container"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
